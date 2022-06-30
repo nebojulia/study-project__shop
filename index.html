@@ -1,136 +1,83 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="fonts.css">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="wrapper">
-        <header>
-            <div class="header__wrap">
-                <a href="#"><img class="header__logo-img" src="img/icon__logo.png" alt="logo"></a>
-                
-                <div class="header__nav">
-                    <img class="header__search-img" src="svg/icon__search.svg" alt="search">
-                    <img class="header__menu-img" src="svg/icon__menu.svg" alt="menu">   <!-- надо ли делать кнопкой? -->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="page">
+            <header class="page__header">
+                <div class="header">
+                    <div class="header__inner">
+                        <a class="header__logo-link" href="#">
+                            <img class="header__logo-img" src="img/icon__logo.png" alt="logo">
+                        </a>
+                        <div class="header__actions">
+                            <a class="header__item" href="#">
+                                <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="14.744" cy="14.744" r="9.41592" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M26.6699 26.6699L21.401 21.401" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <a class="header__burger" href="#">
+                            <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.33072 16.0003H24.6641" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7.33072 22.6669H24.6641" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7.33072 9.33361H24.6641" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </header>
-        <nav>
-            <div class="menu">
-                <div class="menu__header">
-                    <h1 class="menu__header">
-                        Menu
-                    </h1>
-                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6 18L18 6" stroke="#222222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M18 18L6 6" stroke="#222222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+            </header>
+            <main class="page__main">
+
+            </main>
+            <footer class="page__footer">
+                <div class="footer">
+                    <div class="footer__inner">
+                        <ul class="socials">
+                            <li class="socials__item">
+                                <a class="socials__item-link" href="#">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.6155 13.28L16.034 10.616H13.4173V8.88729C13.4173 8.15847 13.7829 7.44806 14.9548 7.44806H16.1443V5.17997C16.1443 5.17997 15.0648 5 14.0327 5C11.8778 5 10.4693 6.27593 10.4693 8.5857V10.616H8.07398V13.28H10.4693V19.72H13.4173V13.28H15.6155Z"/>
+                                    </svg>
+                                        
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a class="socials__item-link" href="#">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.7714 8.62498C9.65629 8.62498 7.95021 10.3283 7.95021 12.44C7.95021 14.5517 9.65629 16.2551 11.7714 16.2551C13.8866 16.2551 15.5926 14.5517 15.5926 12.44C15.5926 10.3283 13.8866 8.62498 11.7714 8.62498ZM11.7714 14.9203C10.4046 14.9203 9.28713 13.808 9.28713 12.44C9.28713 11.0721 10.4012 9.95975 11.7714 9.95975C13.1416 9.95975 14.2557 11.0721 14.2557 12.44C14.2557 13.808 13.1383 14.9203 11.7714 14.9203ZM16.6402 8.46893C16.6402 8.96365 16.2412 9.35877 15.749 9.35877C15.2534 9.35877 14.8577 8.96033 14.8577 8.46893C14.8577 7.97752 15.2568 7.57908 15.749 7.57908C16.2412 7.57908 16.6402 7.97752 16.6402 8.46893ZM19.1711 9.37205C19.1146 8.18006 18.8419 7.1242 17.9672 6.25428C17.0959 5.38436 16.0383 5.11209 14.8444 5.05233C13.6139 4.9826 9.92567 4.9826 8.69516 5.05233C7.50456 5.10877 6.44699 5.38104 5.57234 6.25096C4.69768 7.12088 4.4283 8.17674 4.36843 9.36873C4.2986 10.5972 4.2986 14.2795 4.36843 15.508C4.42497 16.7 4.69768 17.7558 5.57234 18.6258C6.44699 19.4957 7.50124 19.7679 8.69516 19.8277C9.92567 19.8974 13.6139 19.8974 14.8444 19.8277C16.0383 19.7713 17.0959 19.499 17.9672 18.6258C18.8385 17.7558 19.1112 16.7 19.1711 15.508C19.2409 14.2795 19.2409 10.6006 19.1711 9.37205ZM17.5814 16.8262C17.322 17.4769 16.8198 17.9783 16.1647 18.2406C15.1836 18.6291 12.8556 18.5394 11.7714 18.5394C10.6873 18.5394 8.35594 18.6258 7.37819 18.2406C6.72635 17.9816 6.22417 17.4803 5.96144 16.8262C5.57234 15.8467 5.66213 13.5224 5.66213 12.44C5.66213 11.3576 5.57566 9.03006 5.96144 8.05389C6.22085 7.40311 6.72303 6.90174 7.37819 6.63943C8.35927 6.25096 10.6873 6.34061 11.7714 6.34061C12.8556 6.34061 15.1869 6.25428 16.1647 6.63943C16.8165 6.89842 17.3187 7.39979 17.5814 8.05389C17.9705 9.03338 17.8807 11.3576 17.8807 12.44C17.8807 13.5224 17.9705 15.85 17.5814 16.8262Z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a class="socials__item-link" href="#">
+                                    <svg width="25" height="24" viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.8292 4C9.64451 4 6.49707 6.1375 6.49707 9.59688C6.49707 11.7969 7.72625 13.0469 8.4712 13.0469C8.7785 13.0469 8.95542 12.1844 8.95542 11.9406C8.95542 11.65 8.21978 11.0312 8.21978 9.82188C8.21978 7.30938 10.1194 5.52813 12.5778 5.52813C14.6916 5.52813 16.256 6.7375 16.256 8.95937C16.256 10.6187 15.5948 13.7312 13.4531 13.7312C12.6802 13.7312 12.019 13.1687 12.019 12.3625C12.019 11.1813 12.8385 10.0375 12.8385 8.81875C12.8385 6.75 9.92386 7.125 9.92386 9.625C9.92386 10.15 9.98905 10.7312 10.2218 11.2094C9.7935 13.0656 8.91817 15.8312 8.91817 17.7437C8.91817 18.3344 9.00198 18.9156 9.05785 19.5063C9.16339 19.625 9.11062 19.6125 9.27203 19.5531C10.8364 17.3969 10.7806 16.975 11.4883 14.1531C11.8701 14.8844 12.8571 15.2781 13.6393 15.2781C16.9358 15.2781 18.4164 12.0438 18.4164 9.12813C18.4164 6.025 15.7531 4 12.8292 4Z""/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a class="socials__item-link" href="#">
+                                    <svg width="25" height="24" viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.0046 9.23856C19.0147 9.38069 19.0147 9.52284 19.0147 9.66497C19.0147 14 15.7374 18.9949 9.74751 18.9949C7.90213 18.9949 6.18787 18.4568 4.74585 17.5228C5.00804 17.5533 5.26012 17.5634 5.5324 17.5634C7.05506 17.5634 8.45675 17.0457 9.57608 16.1624C8.14415 16.132 6.94415 15.1878 6.5307 13.8883C6.7324 13.9187 6.93406 13.9391 7.14585 13.9391C7.43827 13.9391 7.73073 13.8984 8.00298 13.8274C6.51055 13.5228 5.3912 12.203 5.3912 10.6091V10.5685C5.82479 10.8122 6.32903 10.9645 6.86345 10.9847C5.98614 10.3959 5.41137 9.39084 5.41137 8.25378C5.41137 7.64466 5.57269 7.08628 5.85506 6.59897C7.45842 8.58881 9.8685 9.88828 12.571 10.0304C12.5206 9.78678 12.4903 9.533 12.4903 9.27919C12.4903 7.47206 13.9424 6 15.7474 6C16.6852 6 17.5323 6.39594 18.1273 7.03553C18.8634 6.89341 19.5692 6.61928 20.1945 6.24366C19.9524 7.00509 19.4382 7.64469 18.7626 8.05075C19.418 7.97972 20.0533 7.79694 20.6382 7.54316C20.1945 8.19287 19.6399 8.77153 19.0046 9.23856Z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="footer__rights">© 2021  Brand  All Rights Reserved.</div>
+                    </div>
                 </div>
-                <ul class="menu__list">
-                    <li class="menu__subtitle"><a class="menu__subtitle-link" href="#">Man</a>
-                        <ul class="menu__items">
-                            <li class="menu__item">
-                                <a class="menu__item-link" href="#">Accessories</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__item-link" href="#">Bags</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__item-link" href="#">Denim</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__item-link" href="#">T-Shirts</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu__subtitle"><a class="menu__subtitle-link" href="#">Woman</a>
-                        <ul class="menu__items">
-                            <li class="menu__item">
-                                <a class="menu__item-link" href="#">Accessories</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__item-link" href="#">Jackets & Coats</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__item-link" href="#">Polos</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__item-link" href="#">T-Shirts</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__item-link" href="#">Shirts</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu__subtitle"><a class="menu__subtitle-link" href="#">Kids</a>
-                        <ul class="menu__items">
-                            <li class="menu__item">
-                                <a class="menu__item-link" href="#">Accessories</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__item-link" href="#">Jackets & Coats</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__item-link" href="#">Polos</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__item-link" href="#">T-Shirts</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__item-link" href="#">Shirts</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__item-link" href="#">Bags</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <footer>
-            <div class="footer__wrap">
-                <ul class="socials">
-                    <li class="socials__item">
-                        <a href="#" class="socials__item-link">
-                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M15.6155 13.28L16.034 10.616H13.4173V8.88729C13.4173 8.15847 13.7829 7.44806 14.9548 7.44806H16.1443V5.17997C16.1443 5.17997 15.0648 5 14.0327 5C11.8778 5 10.4693 6.27593 10.4693 8.5857V10.616H8.07398V13.28H10.4693V19.72H13.4173V13.28H15.6155Z"/>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="socials__item">
-                        <a href="#" class="socials__item-link">
-                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M11.7714 8.62498C9.65629 8.62498 7.95021 10.3283 7.95021 12.44C7.95021 14.5517 9.65629 16.2551 11.7714 16.2551C13.8866 16.2551 15.5926 14.5517 15.5926 12.44C15.5926 10.3283 13.8866 8.62498 11.7714 8.62498ZM11.7714 14.9203C10.4046 14.9203 9.28713 13.808 9.28713 12.44C9.28713 11.0721 10.4012 9.95975 11.7714 9.95975C13.1416 9.95975 14.2557 11.0721 14.2557 12.44C14.2557 13.808 13.1383 14.9203 11.7714 14.9203ZM16.6402 8.46893C16.6402 8.96365 16.2412 9.35877 15.749 9.35877C15.2534 9.35877 14.8577 8.96033 14.8577 8.46893C14.8577 7.97752 15.2568 7.57908 15.749 7.57908C16.2412 7.57908 16.6402 7.97752 16.6402 8.46893ZM19.1711 9.37205C19.1146 8.18006 18.8419 7.1242 17.9672 6.25428C17.0959 5.38436 16.0383 5.11209 14.8444 5.05233C13.6139 4.9826 9.92567 4.9826 8.69516 5.05233C7.50456 5.10877 6.44699 5.38104 5.57234 6.25096C4.69768 7.12088 4.4283 8.17674 4.36843 9.36873C4.2986 10.5972 4.2986 14.2795 4.36843 15.508C4.42497 16.7 4.69768 17.7558 5.57234 18.6258C6.44699 19.4957 7.50124 19.7679 8.69516 19.8277C9.92567 19.8974 13.6139 19.8974 14.8444 19.8277C16.0383 19.7713 17.0959 19.499 17.9672 18.6258C18.8385 17.7558 19.1112 16.7 19.1711 15.508C19.2409 14.2795 19.2409 10.6006 19.1711 9.37205ZM17.5814 16.8262C17.322 17.4769 16.8198 17.9783 16.1647 18.2406C15.1836 18.6291 12.8556 18.5394 11.7714 18.5394C10.6873 18.5394 8.35594 18.6258 7.37819 18.2406C6.72635 17.9816 6.22417 17.4803 5.96144 16.8262C5.57234 15.8467 5.66213 13.5224 5.66213 12.44C5.66213 11.3576 5.57566 9.03006 5.96144 8.05389C6.22085 7.40311 6.72303 6.90174 7.37819 6.63943C8.35927 6.25096 10.6873 6.34061 11.7714 6.34061C12.8556 6.34061 15.1869 6.25428 16.1647 6.63943C16.8165 6.89842 17.3187 7.39979 17.5814 8.05389C17.9705 9.03338 17.8807 11.3576 17.8807 12.44C17.8807 13.5224 17.9705 15.85 17.5814 16.8262Z"/>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="socials__item">
-                        <a href="#" class="socials__item-link">
-                            <svg width="25" height="24" viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.8292 4C9.64451 4 6.49707 6.1375 6.49707 9.59688C6.49707 11.7969 7.72625 13.0469 8.4712 13.0469C8.7785 13.0469 8.95542 12.1844 8.95542 11.9406C8.95542 11.65 8.21978 11.0312 8.21978 9.82188C8.21978 7.30938 10.1194 5.52813 12.5778 5.52813C14.6916 5.52813 16.256 6.7375 16.256 8.95937C16.256 10.6187 15.5948 13.7312 13.4531 13.7312C12.6802 13.7312 12.019 13.1687 12.019 12.3625C12.019 11.1813 12.8385 10.0375 12.8385 8.81875C12.8385 6.75 9.92386 7.125 9.92386 9.625C9.92386 10.15 9.98905 10.7312 10.2218 11.2094C9.7935 13.0656 8.91817 15.8312 8.91817 17.7437C8.91817 18.3344 9.00198 18.9156 9.05785 19.5063C9.16339 19.625 9.11062 19.6125 9.27203 19.5531C10.8364 17.3969 10.7806 16.975 11.4883 14.1531C11.8701 14.8844 12.8571 15.2781 13.6393 15.2781C16.9358 15.2781 18.4164 12.0438 18.4164 9.12813C18.4164 6.025 15.7531 4 12.8292 4Z"/>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="socials__item">
-                        <a href="#" class="socials__item-link">
-                            <svg width="25" height="24" viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M19.0046 9.23856C19.0147 9.38069 19.0147 9.52284 19.0147 9.66497C19.0147 14 15.7374 18.9949 9.74751 18.9949C7.90213 18.9949 6.18787 18.4568 4.74585 17.5228C5.00804 17.5533 5.26012 17.5634 5.5324 17.5634C7.05506 17.5634 8.45675 17.0457 9.57608 16.1624C8.14415 16.132 6.94415 15.1878 6.5307 13.8883C6.7324 13.9187 6.93406 13.9391 7.14585 13.9391C7.43827 13.9391 7.73073 13.8984 8.00298 13.8274C6.51055 13.5228 5.3912 12.203 5.3912 10.6091V10.5685C5.82479 10.8122 6.32903 10.9645 6.86345 10.9847C5.98614 10.3959 5.41137 9.39084 5.41137 8.25378C5.41137 7.64466 5.57269 7.08628 5.85506 6.59897C7.45842 8.58881 9.8685 9.88828 12.571 10.0304C12.5206 9.78678 12.4903 9.533 12.4903 9.27919C12.4903 7.47206 13.9424 6 15.7474 6C16.6852 6 17.5323 6.39594 18.1273 7.03553C18.8634 6.89341 19.5692 6.61928 20.1945 6.24366C19.9524 7.00509 19.4382 7.64469 18.7626 8.05075C19.418 7.97972 20.0533 7.79694 20.6382 7.54316C20.1945 8.19287 19.6399 8.77153 19.0046 9.23856Z"/>
-                            </svg>  
-                        </a>                   
-                    </li>
-                </ul>
-                <p class="footer__rights">
-                    © 2021  Brand  All Rights Reserved.
-                </p>
-            </div>
-        </footer>
-    </div>
-    
-</body>
+            </footer>
+        </div>
+    </body>
 </html>
