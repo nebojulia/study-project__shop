@@ -15,10 +15,12 @@ $close.addEventListener('click', () => {
 })
 
 window.addEventListener('click', event => {
-    const target = event.target;
-    if(!target.closest('.page__nav') && !target.closest('.nav__close'))  {
+    /*if(!event.target.closest('page__nav'))  {
         $pageNav.classList.remove('open');
-    }
+    }*/
+    if(!event.target.className === 'PAGE__NAV'){
+		document.body.classList.toggle("open");
+	}
 })
 
 /**$page.addEventListener('click', event => {
