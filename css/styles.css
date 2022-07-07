@@ -99,6 +99,21 @@ html, body {
     margin-left: auto;
 }
 
+
+.header__cart-counter {
+    position: absolute;
+    top: -4;
+    right: 0;
+}
+
+.header__item {
+    position: relative;
+}
+
+.header__item_hidden {
+    display: none;
+}
+
 .header__burger {
     margin-left: 40px;
 }
@@ -213,4 +228,27 @@ html, body {
 .footer__rights {
     color: #fff;
     font-size: 16px;
+}
+
+@media (min-width: 768px) {
+    .header__item_hidden {
+        display: block;
+    }
+
+    .footer__inner {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: calc(100% - 48px);
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1280px) {
+    .header__inner {
+        width: calc(100% - 300px);
+    }
+
+    .footer__inner {
+        width: calc(100% - 300px);
+    }
 }
