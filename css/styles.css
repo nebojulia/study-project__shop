@@ -219,6 +219,48 @@ html, body {
     font-size: 20px;
 }
 
+.section-banners__inner {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    padding: 64px 16px;
+    width: 328px;
+    height: 248px;
+}
+
+.banner__girl  {
+    /**
+    .banner { если задавать всем картинкам один класс
+    position: relative;
+    width: 280px;
+    height: 200px;
+    border: 2px solid #000;
+    overflow: hidden;
+    */
+    background-image: url("../img/banners-girl.png");
+    background-position: center;
+    background-size: cover;
+    width: 328px;
+    height: 248px;
+}
+
+/**.banner > img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}*/
+
+.banner__darker {
+    width: 328px;
+    height: 248px;
+    background: linear-gradient(0deg, rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7));
+}
+
 .footer {
     background-color: #222;
     padding: 32px 0;
