@@ -209,6 +209,8 @@ html, body {
     font-weight: 700;
     padding-left: 12px;
     text-transform: uppercase;
+    display: grid;
+    gap: 4px;
 }
 
 .section-hero__title {
@@ -219,15 +221,17 @@ html, body {
     font-size: 20px;
 }
 
+.section-hero__subtitle_color {
+    color: #f16d7f;
+}
+
 .section-banners__inner {
     align-items: center;
     display: flex;
     flex-direction: column;
     gap: 16px;
     justify-content: center;
-    padding: 64px 16px;
-    width: 328px;
-    height: 248px;
+    padding: 64px 16px 0 16px;
 }
 
 .banner__girl  {
@@ -242,8 +246,28 @@ html, body {
     background-image: url("../img/banners-girl.png");
     background-position: center;
     background-size: cover;
+}
+
+.banner__men  {
+    background-image: url("../img/banners-men.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.banner__kid  {
+    background-image: url("../img/banners-kid.png");
+    background-position: center;
+    background-size: 100% auto;
+    object-fit: cover;
+}
+
+.banner__clothes  {
+    background-image: url("../img/banners-clothes.png");
+    background-position: center;
+    background-size: auto 150%;
+    height: 120px;
+    object-fit: fit;
     width: 328px;
-    height: 248px;
 }
 
 /**.banner > img {
@@ -256,9 +280,48 @@ html, body {
 }*/
 
 .banner__darker {
-    width: 328px;
-    height: 248px;
     background: linear-gradient(0deg, rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7));
+    height: 248px;
+    width: 328px;
+}
+
+.banner__darker_clothes {
+    background: linear-gradient(0deg, rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7));
+    height: 120px;
+    width: 328px;
+}
+
+.section-goods {
+    background: #fff;
+}
+
+.section-goods__inner {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    padding: 128px 16px 64px 16px;
+    text-align: center;
+}
+
+.section-goods__header {
+    display: grid;
+    gap: 8px;
+}
+
+.section-goods__title {
+    color: #222;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.25;
+    text-transform: capitalize;
+}
+
+.section-goods__subtitle {
+    color: #868686;
+    font-size: 14px;
+    line-height: 115%;
 }
 
 .footer {
