@@ -6,6 +6,10 @@ html, body {
     width: 100%;
 }
 
+.hidden {
+    /*display: none;*/
+}
+
 .page {
     display: flex;
     flex-direction: column;
@@ -299,17 +303,16 @@ html, body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 16px;
     justify-content: center;
+    gap: 16px;
     padding: 128px 16px 64px 16px;
-    text-align: center;
 }
 
 .section-goods__header {
     display: grid;
     gap: 8px;
+    text-align: center;
 }
-
 .section-goods__title {
     color: #222;
     font-size: 32px;
@@ -322,6 +325,59 @@ html, body {
     color: #868686;
     font-size: 14px;
     line-height: 115%;
+}
+
+.section-goods__product-list {
+    width: 328px;
+}
+
+.product {}
+
+.product__img {
+    width: 328px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.section-goods__darker {
+    
+}
+
+.section-goods__button {
+    display: flex;
+}
+
+.product__img_man {
+    height: 100%;
+    width: 100%;
+}
+
+.product__info {
+    padding: 24px 16px;
+    display: grid;
+    gap: 16px;
+}
+
+.product__name {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #222;
+}
+
+.product__description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.15;
+    color: #868686;
+}
+
+.product__price {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+    color: #f16d7f;
 }
 
 .footer {
