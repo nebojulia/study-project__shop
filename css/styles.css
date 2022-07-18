@@ -284,15 +284,40 @@ html, body {
 }*/
 
 .banner__darker {
+    align-items: center;
     background: linear-gradient(0deg, rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7));
+    display: flex;
+    flex-direction: column;
     height: 248px;
+    justify-content: center;
     width: 328px;
 }
 
 .banner__darker_clothes {
+    align-items: center;
     background: linear-gradient(0deg, rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7));
+    display: flex;
+    flex-direction: column;
     height: 120px;
+    justify-content: center;
     width: 328px;
+}
+
+.banner__sale {
+    display: flex;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    text-transform: uppercase;
+}
+
+.banner__category {
+    color: #F16D7F;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 100%;
+    text-transform: uppercase;
 }
 
 .section-goods {
@@ -357,8 +382,9 @@ html, body {
     display: flex;
 }
 
-.section-goods__button {
+.section-goods__button-add {
     align-items: center;
+    background: transparent;
     border: #fff 1px solid;
     display: flex;
     padding: 8px 20px 8px 16px;
@@ -418,6 +444,19 @@ html, body {
     font-size: 16px;
     font-weight: 700;
     line-height: 1;
+}
+
+.section-goods__button {
+    background: transparent;
+    border: #f16d7f 1px solid;
+    box-sizing: border-box;
+    color: #f16d7f;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+    margin-top: 32px;
+    padding: 16px 40px;
+    text-transform: capitalize;
 }
 
 .footer {
