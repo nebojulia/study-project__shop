@@ -239,17 +239,10 @@ html, body {
 }
 
 .banner__girl  {
-    /**
-    .banner { если задавать всем картинкам один класс
-    position: relative;
-    width: 280px;
-    height: 200px;
-    border: 2px solid #000;
-    overflow: hidden;
-    */
     background-image: url("../img/banners-girl.png");
     background-position: center;
     background-size: cover;
+    background-position: 50% 25%;
 }
 
 .banner__men  {
@@ -260,9 +253,9 @@ html, body {
 
 .banner__kid  {
     background-image: url("../img/banners-kid.png");
-    background-position: center;
     background-size: 100% auto;
     object-fit: cover;
+    background-position: 50% 0;
 }
 
 .banner__clothes  {
@@ -270,7 +263,6 @@ html, body {
     background-position: center;
     background-size: auto 150%;
     height: 120px;
-    object-fit: fit;
     width: 328px;
 }
 
@@ -486,7 +478,6 @@ html, body {
     font-weight: 700;
     line-height: 1.2;
     margin-top: 16px;
-    text-transform: capitalize;
 }
 
 .section-advantages__item-descr {
@@ -496,6 +487,99 @@ html, body {
     line-height: 1.15;
     margin-top: 8px;
     text-align: center;
+}
+
+.section-subscribe {
+    background-position: 55% 50%;
+    background-size: auto 100%;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("../img/subscribe__bg.png");
+    object-fit: cover;
+    padding: 64px 16px 80px 16px;
+}
+
+.section-subscribe__quote {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.quote__img {
+    border-radius: 100%;
+    height: 88px;
+    margin-bottom: 16px;
+    width: 88px;
+}
+
+.quote__text {
+    color: #222;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.33;
+    text-align: center;
+}
+
+.section-subscribe__text {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.section-subscribe__text-title {
+    color: #222;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.33;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section-subscribe__text-subtitle {
+    color: #222;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 145%;
+    margin: 4px 0 48px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section-subscribe__form {
+    display: flex;
+    background: #fff;
+    border-radius: 24px;
+    width: 328px;
+    margin: 0 auto;
+}
+
+.section-subscribe__input {
+    align-items: center;
+    background: #fff;
+    border-radius: 24px 0 0 24px;
+    border: none;
+    color: #222222;
+    font-size: 14px;
+    font-weight: 400;
+    height: 48px;
+    line-height: 17px;
+    opacity: 0.67;
+    width: 236px;
+    padding-left: 28px;
+}
+
+.section-subscribe__button {
+    align-items: center;
+    background: #f16d7f;
+    border-radius: 0 24px 24px 0;
+    border: none;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 115%;
+    text-align: center;
+    width: 92px;
 }
 
 .footer {
