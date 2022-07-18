@@ -303,8 +303,8 @@ html, body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 16px;
+    justify-content: center;
     padding: 128px 16px 64px 16px;
 }
 
@@ -328,56 +328,96 @@ html, body {
 }
 
 .section-goods__product-list {
+    display: grid;
+    gap: 16px;
     width: 328px;
 }
 
 .product {}
 
-.product__img {
-    width: 328px;
+.product__img-container {
     height: 400px;
-    object-fit: cover;
+    position: relative;
+    width: 328px;
 }
 
-.section-goods__darker {
-    
+.product__img-darker {
+    align-items: center;
+    background: rgba(34, 34, 34, 0.7);
+    display: none;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
-.section-goods__button {
+.product:hover .product__img-darker {
     display: flex;
 }
 
-.product__img_man {
+.section-goods__button {
+    align-items: center;
+    border: #fff 1px solid;
+    display: flex;
+    padding: 8px 20px 8px 16px;
+}
+
+.section-goods__button-img {
+    height: 24px;
+    width: 24px;
+}
+
+.section-goods__button-text {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    margin-left: 8px;
+
+}
+.product__img {
+    background: #F1D9DD;
     height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.product__img_contain {
+    background: #F1D9DD;
+    height: 100%;
+    object-fit: contain;
     width: 100%;
 }
 
 .product__info {
-    padding: 24px 16px;
+    background: #F8F8F8;
     display: grid;
     gap: 16px;
+    padding: 24px 16px;
 }
 
 .product__name {
-    font-weight: 700;
+    color: #222;
     font-size: 13px;
+    font-weight: 700;
     line-height: 1.2;
     text-transform: uppercase;
-    color: #222;
 }
 
 .product__description {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.15;
     color: #868686;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.15;
 }
 
 .product__price {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1;
     color: #f16d7f;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
 }
 
 .footer {
