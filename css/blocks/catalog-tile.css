@@ -1,0 +1,66 @@
+.catalog-tile {
+}
+.catalog-tile__inner {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    padding: 64px 16px 0 16px;
+}
+.catalog-tile__girl  {
+    background-image: url("../../img/banners-girl.png");
+    background-position: 50% 25%;
+    background-size: cover;
+}
+.catalog-tile__men  {
+    background-image: url("../../img/banners-men.png");
+    background-position: center;
+    background-size: cover;
+}
+.catalog-tile__kid  {
+    background-image: url("../../img/banners-kid.png");
+    background-position: 50% 0;
+    background-size: 100% auto;
+    object-fit: cover;
+}
+.catalog-tile__clothes  {
+    background-image: url("../../img/banners-clothes.png");
+    background-position: center;
+    background-size: auto 150%;
+    height: 120px;
+    width: 328px;
+}
+.catalog-tile__darker {
+    align-items: center;
+    background: linear-gradient(0deg, rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7));
+    display: flex;
+    flex-direction: column;
+    height: 248px;
+    justify-content: center;
+    width: 328px;
+}
+.catalog-tile__darker_clothes {
+    align-items: center;
+    background: linear-gradient(0deg, rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7));
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    justify-content: center;
+    width: 328px;
+}
+.catalog-tile__sale {
+    display: flex;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    text-transform: uppercase;
+}
+.catalog-tile__category {
+    color: #F16D7F;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 100%;
+    text-transform: uppercase;
+}
