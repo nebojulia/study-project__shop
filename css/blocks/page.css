@@ -1,0 +1,49 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+.page__header {
+    flex: 0 0 auto;
+    position: fixed;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+.page__nav {
+    background: #fff;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateX(232px);
+    transition: transform 0.25s ease-in;
+    width: 232px;
+    z-index: 5;
+}
+.open .page__nav {
+    transform: translateX(0);
+}
+.page__main {
+    flex: 1 1 auto;
+    padding-top: 72px;
+}
+.page__footer {
+    flex: 0 0 auto;
+    z-index: 2;
+}
+.page__darker {
+    background: rgba(0, 0, 0, 0.25);
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    transition: opacity .25s ease;
+    width: 100%;
+    z-index: 3;
+}
+.open .page__darker {
+    opacity: 1;
+    pointer-events: auto;
+}
