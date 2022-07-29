@@ -31,8 +31,9 @@
 .catalog-tile_accesories  {
     /**height: 120px;*/
     aspect-ratio: 2.733/1;
-    background-size: cover, cover;
-    background: linear-gradient(0deg, rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url("../../img/banners-clothes.png") no-repeat center;
+    background-size: fit, fit;
+    background: linear-gradient(0deg, rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url("../../img/banners-acsessories.png") no-repeat center;
+
 }
 .catalod-tile__subtitle {
     color: var(--light-primary);

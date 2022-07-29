@@ -12,7 +12,7 @@
     width: 88px;
 }
 .quote__text {
-    color: #222;
+    color: var(--dark-primary);
     font-size: 18px;
     font-weight: 400;
     line-height: 1.33;

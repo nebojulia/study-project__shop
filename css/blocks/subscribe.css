@@ -12,7 +12,7 @@
     text-align: center;
 }
 .subscribe__text-title {
-    color: #222;
+    color: var(--dark-primary);
     font-size: 24px;
     font-weight: 700;
     line-height: 1.33;
@@ -20,7 +20,7 @@
     text-transform: uppercase;
 }
 .subscribe__text-subtitle {
-    color: #222;
+    color: var(--dark-primary);
     font-size: 14px;
     font-weight: 400;
     line-height: 145%;
@@ -30,17 +30,17 @@
 }
 .subscribe__form {
     display: flex;
-    background: #fff;
+    background: var(--light-primary);
     border-radius: 24px;
     width: 328px;
     margin: 0 auto;
 }
 .subscribe__input {
     align-items: center;
-    background: #fff;
+    background: var(--light-primary);
     border-radius: 24px 0 0 24px;
     border: none;
-    color: #222222;
+    color: var(--dark-primary);
     font-size: 14px;
     font-weight: 400;
     height: 48px;
@@ -51,10 +51,10 @@
 }
 .subscribe__button {
     align-items: center;
-    background: #f16d7f;
+    background: var(--brand-primary);
     border-radius: 0 24px 24px 0;
     border: none;
-    color: #FFFFFF;
+    color: var(--light-primary);
     font-size: 14px;
     font-weight: 400;
     line-height: 115%;

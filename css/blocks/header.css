@@ -1,5 +1,5 @@
 .header {
-    background-color: #222;
+    background: var(--dark-primary);;
     padding: 12px 0;
 }
 .header__inner {
@@ -24,9 +24,9 @@
 }
 .header__cart-counter {
     align-items: center;
-    background: #f16d7f;
+    background: var(--brand-primary);
     border-radius: 8px;
-    color: #fff;
+    color: var(--light-primary);
     display: flex;
     flex-direction: column;
     font-size: 12px;
