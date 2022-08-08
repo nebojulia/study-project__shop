@@ -1,0 +1,45 @@
+.goods {
+    background: var(--light-primary);
+}
+.goods__inner {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 64px 0;
+}
+.goods__header {
+    text-align: center;
+}
+.goods__grid {
+    display: grid;
+    gap: 16px;
+    margin-top: 32px;
+}
+.goods__button-add {
+    
+}
+.goods__button-img {
+    height: 24px;
+    width: 24px;
+}
+.goods__button-text {
+    color: var(--light-primary);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    margin-left: 8px;
+}
+.goods__button {
+    background: transparent;
+    border: var(--brand-primary) 1px solid;
+    box-sizing: border-box;
+    color: var(--brand-primary);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    margin-top: 32px;
+    padding: 16px 40px;
+    text-transform: capitalize;
+}

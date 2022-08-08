@@ -1,0 +1,24 @@
+.socials {
+    display: flex;
+    gap: 12px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.socials__item {
+    background-color: var(--light-primary);
+    height: 32px;
+    width: 32px;
+}
+.socials__item-link {
+    box-sizing: border-box;
+    display: block;
+    height: 100%;
+    padding: 4px;
+    width: 100%;
+}
+.socials__item-link:hover,
+.socials__item-link:active {
+    background-color: var(--brand-primary);
+    fill: var(--light-primary);
+}

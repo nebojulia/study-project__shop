@@ -1,0 +1,50 @@
+.catalog-tile__item {
+    /**height: 248px;*/
+    align-items: center;
+    aspect-ratio: 1.322/1;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.catalog-tile__item + .catalog-tile__item {
+    margin-top: 16px;
+}
+.catalog-tile__inner {
+    padding: 64px 0;
+}
+.catalog-tile_women  {
+    background: linear-gradient(0deg, rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url("../../img/banners-girl.png") no-repeat center;
+    background-size: cover, cover;
+}
+.catalog-tile_men  {
+    background: linear-gradient(0deg, rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url("../../img/banners-men.png") no-repeat center;
+    background-size: cover, cover;
+}
+.catalog-tile_kid  {
+    background: linear-gradient(0deg, rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url("../../img/banners-kid.png") no-repeat center;
+    background-size: cover, cover;
+}
+.catalog-tile_accesories  {
+    /**height: 120px;*/
+    aspect-ratio: 2.733/1;
+    background-size: fit, fit;
+    background: linear-gradient(0deg, rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url("../../img/banners-acsessories.png") no-repeat center;
+
+}
+.catalod-tile__subtitle {
+    color: var(--light-primary);
+    font-size: 16px;
+    line-height: 1.25;
+    text-transform: uppercase;
+}
+.catalod-tile__title {
+    color: var(--brand-primary);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    margin-top: 4px;
+}
