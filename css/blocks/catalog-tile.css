@@ -17,22 +17,22 @@
     padding: 64px 0;
 }
 .catalog-tile_women  {
-    background: linear-gradient(0deg, rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url("../../img/banners-girl.png") no-repeat center;
+    background: linear-gradient(0deg, rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url("../../img/banners-girl.jpg") no-repeat center;
     background-size: cover, cover;
 }
 .catalog-tile_men  {
-    background: linear-gradient(0deg, rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url("../../img/banners-men.png") no-repeat center;
+    background: linear-gradient(0deg, rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url("../../img/banners-men.jpg") no-repeat center;
     background-size: cover, cover;
 }
 .catalog-tile_kid  {
-    background: linear-gradient(0deg, rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url("../../img/banners-kid.png") no-repeat center;
+    background: linear-gradient(0deg, rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url("../../img/banners-kid.jpg") no-repeat center;
     background-size: cover, cover;
 }
 .catalog-tile_accesories  {
     /**height: 120px;*/
     aspect-ratio: 2.733/1;
-    background-size: fit, fit;
-    background: linear-gradient(0deg, rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url("../../img/banners-acsessories.png") no-repeat center;
+    background: linear-gradient(0deg, rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url("../../img/banners-acsessories.jpg") no-repeat center;
+    background-size: cover, cover;
 
 }
 .catalod-tile__subtitle {

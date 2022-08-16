@@ -31,15 +31,8 @@
     display: flex;
 }
 .product-tile__img {
-    background: var(--brand-tertiary);
     height: 100%;
     object-fit: cover;
-    width: 100%;
-}
-.product-tile__img_contain {
-    background: var(--brand-tertiary);
-    height: 100%;
-    object-fit: contain;
     width: 100%;
 }
 .product-tile__info {
