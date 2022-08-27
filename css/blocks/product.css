@@ -39,6 +39,7 @@
     background: var(--light-secondary);
     display: grid;
     gap: 16px;
+    text-align: left;
     padding: 24px 16px;
 }
 .product-tile__name {

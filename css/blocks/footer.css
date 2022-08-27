@@ -20,8 +20,8 @@
         width: calc(100% - 48px);
     }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
     .footer__inner {
-        width: 1216px;
+        width: calc(100% - 128px);
     }
 }

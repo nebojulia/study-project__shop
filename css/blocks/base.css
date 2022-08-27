@@ -16,3 +16,10 @@ html, body {
     padding: 0 16px;
     height: 100%;
 }
+
+@media (min-width: 1024px) {
+    .container {
+        padding: 0 64px;
+        height: 100%;
+    }
+}

@@ -10,11 +10,26 @@
     text-decoration: none;
     text-transform: uppercase;
 }
+@media (min-width: 600px) {
+    .catalog-tile__item {
+        aspect-ratio: 1.446/1;
+    }
+}
 .catalog-tile__item + .catalog-tile__item {
     margin-top: 16px;
 }
 .catalog-tile__inner {
     padding: 64px 0;
+}
+@media (min-width: 600px) {
+    .catalog-tile__inner {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .catalog-tile__item + .catalog-tile__item {
+        margin-top: 0;
+    }
 }
 .catalog-tile_women  {
     background: linear-gradient(0deg, rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url("../../img/banners-girl.jpg") no-repeat center;
@@ -33,7 +48,12 @@
     aspect-ratio: 2.733/1;
     background: linear-gradient(0deg, rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url("../../img/banners-acsessories.jpg") no-repeat center;
     background-size: cover, cover;
-
+    grid-column: 1/4;
+}
+@media (min-width: 600px) {
+    .catalog-tile_accesories {
+        aspect-ratio: 6.133/1;
+    }
 }
 .catalod-tile__subtitle {
     color: var(--light-primary);

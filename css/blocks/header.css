@@ -54,8 +54,8 @@
         display: block;
     }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
     .header__inner {
-        width: 1216px;
+        width: calc(100% - 128px);
     }
 }
