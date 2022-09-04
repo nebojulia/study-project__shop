@@ -5,6 +5,16 @@
     object-fit: cover;
     padding: 64px 0 80px;
 }
+@media (min-width: 600px) {
+    .subscribe {
+        background-position: 25% 50%;
+    }
+}
+@media (min-width: 1024px) {
+    .subscribe {
+        background-position: 55% 50%;
+    }
+}
 .subscribe__grid {
     display: flex;
     flex-direction: column;
@@ -13,6 +23,7 @@
     .subscribe__grid {
         display: flex;
         flex-direction: row;
+        justify-content: space-around;
     }
 }
 .subscribe__text {

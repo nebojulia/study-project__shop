@@ -19,6 +19,17 @@
     align-items: center;
     text-align: center;
 }
+@media (min-width: 600px) {
+    .advantages__item {
+        max-width: 230px;
+        justify-self: center;
+    }
+}
+@media (min-width: 1024px) {
+    .advantages__item {
+        max-width: 384px;
+    }
+}
 .advantages__img {
     width: 48px;
     height: 48px;
