@@ -13,13 +13,21 @@ html, body {
 }
 
 .container {
-    padding: 0 16px;
     height: 100%;
+    max-width: 328px;
+    margin: 0 auto;
 }
-
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
     .container {
-        padding: 0 64px;
         height: 100%;
+        margin: 0 auto;
+        max-width: 736px;
+    }
+}
+@media (min-width: 1280px) {
+    .container {
+        height: 100%;
+        margin: 0 auto;
+        max-width: 1216px;
     }
 }
