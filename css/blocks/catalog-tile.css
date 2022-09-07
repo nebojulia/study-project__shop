@@ -1,3 +1,6 @@
+.catalog-tile {
+    background: var(--light-primary);
+}
 .catalog-tile__item {
     align-items: center;
     aspect-ratio: 1.322/1;

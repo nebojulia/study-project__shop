@@ -1,3 +1,6 @@
+.section {
+    background: var(--light-primary);
+}
 .section__title {
     color: var(--dark-primary);
     font-size: 32px;

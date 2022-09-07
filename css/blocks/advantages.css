@@ -2,7 +2,6 @@
     align-items: center;
     background: var(--dark-primary);
 }
-
 .advantages__tile {
     display: grid;
     padding: 48px 0;
