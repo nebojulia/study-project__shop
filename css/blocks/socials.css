@@ -8,17 +8,31 @@
 .socials__item {
     background-color: var(--light-primary);
     height: 32px;
+    transition: 0.2s ease-in-out, color 0.2s ease-in-out;
     width: 32px;
+}
+.socials__item:hover,
+.socials__item:focus {
+    border-radius: 10px;
+    background: transparent;
 }
 .socials__item-link {
     box-sizing: border-box;
     display: block;
     height: 100%;
     padding: 4px;
+    transition: 0.2s ease-in-out, color 0.2s ease-in-out;
     width: 100%;
 }
-.socials__item-link:hover,
-.socials__item-link:active {
-    background-color: var(--brand-primary);
+.socials__item-link:hover {
+    background: var(--brand-primary);
+    border-radius: 10px;
     fill: var(--light-primary);
+    transform: scale(1.15);
+    transition: 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.socials__item-link:active,
+.socials__item-link:focus {
+    transform: translateY(-3px);
+    transition: 0.1s;
 }
