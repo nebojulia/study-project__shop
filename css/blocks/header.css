@@ -45,6 +45,12 @@
     top: -4px;
     width: 16px;
 }
+.header__cart-counter:hover,
+.header__cart-counter:active {
+    background: var(--light-primary);
+    color: var(--dark-70p);
+    transform: scale(1.15);
+}
 .header__cart-counter:hover {
 background: var(--brand-secondary);
 }

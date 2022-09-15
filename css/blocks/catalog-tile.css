@@ -17,6 +17,13 @@
         aspect-ratio: 1.446/1;
     }
 }
+.catalog-tile__item:hover,
+.catalog-tile__item:active {
+    transform: translateY(-5px) scale(1.07);
+    transition: 0.3s;
+    box-shadow: 2px 2px 15px var(--dark-70p);
+    border-radius: 5px;
+}
 .catalog-tile__item + .catalog-tile__item {
     margin-top: 16px;
 }
