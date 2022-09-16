@@ -54,3 +54,9 @@
     color: var(--dark-70p);
     transition: 0.5s;
 }
+.goods__button:active,
+.goods__button:focus {
+    background: var(--buttons);
+    border-radius: 20px;
+    color: var(--dark-70p);
+}

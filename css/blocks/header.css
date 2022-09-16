@@ -45,17 +45,11 @@
     top: -4px;
     width: 16px;
 }
-.header__cart-counter:hover,
-.header__cart-counter:active {
+.header__item:hover div,
+.header__item:focus div {
     background: var(--light-primary);
     color: var(--dark-70p);
     transform: scale(1.15);
-}
-.header__cart-counter:hover {
-background: var(--brand-secondary);
-}
-.header__cart-counter:hover {
-background: var(--brand-secondary);
 }
 .header__item {
     border-radius: 10px;

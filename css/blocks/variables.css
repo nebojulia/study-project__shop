@@ -1,10 +1,13 @@
 :root {
     --dark-primary: #222;
     --dark-secondary: #868686;
+    --dark-thirdly: #606060;
     --dark-70p:rgba(34, 34, 34, 0.7);
     --light-primary: #fff;
     --light-secondary: #f8f8f8;
     --brand-primary: #f16d7f;
     --brand-secondary: #fcbac3;
     --brand-tertiary: #f1d9dd;
+    --buttons: #ed5065;
+    --visited_link: #c77984;
 }
