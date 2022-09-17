@@ -73,9 +73,12 @@
     line-height: 1.15;
 }
 .nav__item:active {
-    color: var(--dark-thirdly);
     transform: scale(1.03);
     transition: 0.2s;
+}
+.nav__item:hover {
+    transform: translateY(-2px);
+    transition: 0.3s;
 }
 .nav__item + .nav__item {
     padding-top: 12px;
@@ -88,7 +91,6 @@
     color: var(--dark-thirdly);
 }
 .nav__item-link:focus {
-    animation-delay: 1s;
     color: var(--dark-thirdly);
     text-decoration: underline;
 }

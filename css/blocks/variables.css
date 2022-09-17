@@ -10,4 +10,13 @@
     --brand-tertiary: #f1d9dd;
     --buttons: #ed5065;
     --visited_link: #c77984;
+
+    --mobile: 320px;
+    --tablet-sm: 520px;
+    --tablet-md: 600px;
+    --tablet-lg: 768px;
+    --desk-sm: 1024px;
+    --desk-md: 1440px;
+    --desk-lg: 1960px;
+    --desk-xl: 2400px;
 }
