@@ -1,5 +1,4 @@
 .product-tile {
-    aspect-ratio: 1.3725/1;
     display: block;
     text-decoration: none;
 }
@@ -10,8 +9,19 @@
     box-shadow: 2px 2px 15px var(--dark-70p);
 }
 .product-tile__miniature {
-    height: 400px;
+    aspect-ratio: 1/1.2195;
+    /*height: 400px;*/
     position: relative;
+}
+@media (min-width: 768px) {
+    .product-tile__miniature {
+        aspect-ratio: 1/1.1111;
+    }
+}
+@media (min-width: 1024px) {
+    .product-tile__miniature {
+        aspect-ratio: 1/1.0416;
+    }
 }
 .product-tile__button {
     align-items: center;
