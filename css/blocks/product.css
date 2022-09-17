@@ -1,6 +1,7 @@
 .product-tile {
-    text-decoration: none;
+    aspect-ratio: 1.3725/1;
     display: block;
+    text-decoration: none;
 }
 .product-tile:hover,
 .product-tile:active {
