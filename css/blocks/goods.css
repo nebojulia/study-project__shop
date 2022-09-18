@@ -44,18 +44,18 @@
     margin: 32px auto 0;
     padding: 16px 4px;
     text-transform: capitalize;
-    transition: background 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     width: 214px;
+    transition: 0.5s;
 }
 .goods__button:hover {
     background-position: 0;
-    border-radius: 20px;
+    border-radius: 15px;
     color: var(--dark-70p);
-    transition: 0.5s;
 }
 .goods__button:active,
 .goods__button:focus {
     background: var(--buttons);
-    border-radius: 20px;
+    border-radius: 15px;
     color: var(--dark-70p);
 }
