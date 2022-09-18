@@ -1,10 +1,27 @@
 .product-tile {
-    text-decoration: none;
     display: block;
+    text-decoration: none;
+}
+.product-tile:hover,
+.product-tile:active {
+    transform: translateY(-3px) scale(1.05);
+    transition: 0.3s;
+    box-shadow: 2px 2px 15px var(--dark-70p);
 }
 .product-tile__miniature {
-    height: 400px;
+    aspect-ratio: 1/1.2195;
+    /*height: 400px;*/
     position: relative;
+}
+@media (min-width: 768px) {
+    .product-tile__miniature {
+        aspect-ratio: 1/1.1111;
+    }
+}
+@media (min-width: 1024px) {
+    .product-tile__miniature {
+        aspect-ratio: 1/1.0416;
+    }
 }
 .product-tile__button {
     align-items: center;
@@ -12,14 +29,43 @@
     border: var(--light-primary) 1px solid;
     cursor: pointer;
     display: flex;
+    opacity: 60%;
     padding: 8px 20px 8px 16px;
     position: absolute;
-    margin: 178px 0px;
+}
+.product-tile__button:hover,
+.product-tile__button:hover div,
+.product-tile__button:hover svg {
+    background: var(--light-primary);
+    color: var(--dark-70p);
+    stroke: var(--dark-70p);
+}
+.product-tile__button:active,
+.product-tile__button:active div,
+.product-tile__button:active svg {
+    background: var(--light-primary);
+    opacity: 85%;
+    transform: scale(1.05);
+    transition: 0.1s ease-in;
+}
+.product-tile__button-img {
+    height: 24px;
+    stroke: var(--light-primary);
+    width: 24px;
+}
+.product-tile__button-text {
+    color: var(--light-primary);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    margin-left: 8px;
 }
 .product-tile__darker {
+    align-items: center;
     background: rgba(34, 34, 34, 0.7);
     cursor: default;
     display: none;
+    justify-content: center;
     height: 100%;
     left: 0;
     position: absolute;
@@ -28,24 +74,17 @@
 }
 .product-tile:hover .product-tile__darker {
     display: flex;
-    justify-content: center;
 }
 .product-tile__img {
-    background: var(--brand-tertiary);
     height: 100%;
     object-fit: cover;
-    width: 100%;
-}
-.product-tile__img_contain {
-    background: var(--brand-tertiary);
-    height: 100%;
-    object-fit: contain;
     width: 100%;
 }
 .product-tile__info {
     background: var(--light-secondary);
     display: grid;
     gap: 16px;
+    text-align: left;
     padding: 24px 16px;
 }
 .product-tile__name {
