@@ -11,21 +11,22 @@
     justify-content: center;
     text-decoration: none;
     text-transform: uppercase;
+    transition: all 0.3s;
+}
+.catalog-tile__item:hover,
+.catalog-tile__item:active {
+    border-radius: 5px;
+    box-shadow: 2px 2px 15px var(--dark-70p);
+    transform: scale(1.02);
+    /*background: linear-gradient(0deg, rgba(34, 34, 34, 0.5));*/
+}
+.catalog-tile__item + .catalog-tile__item {
+    margin-top: 16px;
 }
 @media (min-width: 768px) {
     .catalog-tile__item {
         aspect-ratio: 1.446/1;
     }
-}
-.catalog-tile__item:hover,
-.catalog-tile__item:active {
-    transform: translateY(-5px) scale(1.07);
-    transition: 0.3s;
-    box-shadow: 2px 2px 15px var(--dark-70p);
-    border-radius: 5px;
-}
-.catalog-tile__item + .catalog-tile__item {
-    margin-top: 16px;
 }
 .catalog-tile__inner {
     padding: 64px 0;
@@ -33,8 +34,8 @@
 @media (min-width: 768px) {
     .catalog-tile__inner {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
         gap: 16px;
+        grid-template-columns: repeat(3, 1fr);
     }
     .catalog-tile__item + .catalog-tile__item {
         margin-top: 0;
@@ -53,7 +54,6 @@
     background-size: cover, cover;
 }
 .catalog-tile_accesories  {
-    /**height: 120px;*/
     aspect-ratio: 2.733/1;
     background: linear-gradient(0deg, rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url("../../img/banners-acsessories.jpg") no-repeat center;
     background-size: cover, cover;
